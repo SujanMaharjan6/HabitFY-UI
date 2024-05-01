@@ -1,4 +1,3 @@
 # HabitFY-UI
 
-Made an initial commit, created login, register, and home page for now (Angular).
-Sujan
+To use this website use this URL: https://habitfy.vercel.app/login
