@@ -1,0 +1,60 @@
+.navbar-brand {
+    color: whitesmoke;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 25px;
+}
+
+.nav-link {
+    color: whitesmoke;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 21px;
+}
+
+li {
+    margin: 0px 40px 0px 0px;
+    cursor: pointer;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    transform: scaleY(1.01);
+}
+
+button {
+    font-size: 1.1rem;
+    padding: 0.25rem 0.4rem;
+}
+
+nav {
+    padding: 0rem;
+    background-color: black;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+.nav-link.disabled {
+    color: #72787f;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 22px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    img {
+        width: 32px !important;
+    }
+}

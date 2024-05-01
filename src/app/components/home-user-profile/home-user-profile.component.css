@@ -1,0 +1,211 @@
+.card {
+  background-color: rgb(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 0%;
+  padding-bottom: 18px;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.avatar img {
+  margin-right: 10px;
+  width: 60px;
+  height: auto;
+}
+
+.avatar img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.imageAndName {
+  margin-bottom: -15px;
+  padding-top: 10px;
+}
+
+.card-title,
+.card-subtitle,
+.progress-name,
+.percentage-value {
+  margin: 0;
+  padding: 0;
+}
+
+.progress-container_2 {
+  margin-left: 88px;
+}
+
+.card-title {
+  font-size: 20px;
+  color: black;
+}
+
+.card-subtitle {
+  font-size: 15px;
+}
+
+.progress-wrapper {
+  display: flex;
+  align-items: center;
+  width: 20rem;
+}
+
+.progress {
+  border-radius: 5px;
+  position: relative;
+  height: 9px;
+  width: 70%;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 5px;
+  width: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: width 2s ease-out;
+}
+
+.progress-name {
+  margin: 5px 0px;
+  font-size: 14px;
+}
+
+.percentage-value {
+  font-size: 13px;
+  margin: -5px;
+  padding: 0px;
+  white-space: nowrap;
+  color: black;
+}
+
+.subGoals {
+  font-size: 17px;
+}
+
+.sub-list:hover {
+  transform: scaleY(1.05);
+  transition: transform 0.3s;
+}
+
+.statsTitle {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 22px;
+  color: black;
+  font-weight: 600;
+}
+
+.statsTitle,
+.sub-list {
+  background-color: rgb(255, 255, 255, 0);
+}
+
+.pb-3 {
+  padding-bottom: 10px;
+}
+
+.no-border .list-group-item {
+  border: none;
+}
+
+.list-group-item {
+  padding-bottom: 0px;
+}
+
+.displayedQuote {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.circle {
+  position: relative;
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(#0404b0, #b00404);
+  border-radius: 50%;
+}
+
+.circle:hover {
+  animation: animate 0.5s linear infinite;
+}
+
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.circle:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+
+  .card-title,
+  .statsTitle,
+  .displayedQuote {
+    font-size: 19px;
+  }
+
+  .card-subtitle {
+    font-size: 15px;
+    margin-bottom: 15px !important;
+  }
+
+  .progress-name,
+  .percentage-value {
+    font-size: 13px;
+  }
+
+  .progress-name {
+    margin-top: 5px;
+    margin-bottom: 7px;
+    margin-right: 90px;
+  }
+
+  .quotes {
+    margin-top: 1rem;
+  }
+
+  .avatar img {
+    width: 40px;
+  }
+
+  .row>.col-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .imgNameBar,
+  .myStats {
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+  }
+
+  .progress-container {
+    margin-left: 88px;
+  }
+}
